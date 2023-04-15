@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Ejemplo de cambiar color de fondo</title>
+  </head>
+  <body>
+    <h1>Ejemplo de cambiar color de fondo</h1>
+    <button id="cambiar-color" onclick="cambiarColorFondo()">Cambiar color de fondo</button>
+
+    <script>
+      function cambiarColorFondo() {
+        var colorFondo = prompt("Introduce un color en formato hexadecimal, por ejemplo #FF0000 para rojo:");
+
+        if (colorFondo != null) {
+          document.body.style.backgroundColor = colorFondo;
+        }
+      }
+    </script>
+  </body>
+</html>

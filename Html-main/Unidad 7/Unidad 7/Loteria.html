@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Juego de lotería</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Juego de lotería</h1>
+    <script>
+      function generarNumeroAleatorio() {
+        return Math.floor(Math.random() * 100) + 1;
+      }
+
+      function jugarLoteria() {
+        const numeroGanador = generarNumeroAleatorio();
+        const numeroElegido = parseInt(prompt("Elige un número entre 1 y 100"));
+
+        if (numeroElegido === numeroGanador) {
+          alert(`¡Felicidades! El número ganador es ${numeroGanador}.`);
+        } else {
+          alert(`Lo siento, el número ganador era ${numeroGanador}.`);
+        }
+      }
+
+      jugarLoteria();
+    </script>
+  </body>
+</html>

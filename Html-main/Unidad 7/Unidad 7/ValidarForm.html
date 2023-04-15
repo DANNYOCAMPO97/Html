@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Formulario de Ejemplo</title>
+	<script>
+		function validarFormulario() {
+			var nombre = document.getElementById("nombre").value;
+			var email = document.getElementById("email").value;
+			var mensaje = document.getElementById("mensaje").value;
+
+			if(nombre == "" || email == "" || mensaje == "") {
+				alert("Por favor, completa todos los campos.");
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Formulario de Ejemplo</h1>
+	<form onsubmit="return validarFormulario()">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre"><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br>
+
+		<label for="mensaje">Mensaje:</label>
+		<textarea id="mensaje" name="mensaje"></textarea><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

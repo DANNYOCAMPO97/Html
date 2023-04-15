@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Efecto de imagen con hover</title>
+	<style type="text/css">
+		#imagen-contenedor {
+			position: relative;
+			display: inline-block;
+		}
+		
+		#imagen-contenedor:hover img {
+			opacity: 0.5;
+			filter: grayscale(100%);
+			transform: scale(1.1);
+		}
+		
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			transition: all 0.3s ease;
+		}
+	</style>
+</head>
+<body>
+	<div id="imagen-contenedor">
+		<img src="C:\Users\DOMINGUEZ\Pictures\i_a.jpg" alt="Tu imagen">
+	</div>
+</body>
+</html>

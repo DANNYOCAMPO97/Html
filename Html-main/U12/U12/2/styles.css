@@ -1,0 +1,5 @@
+.myObject {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: width 0.5s, height 0.5s;}

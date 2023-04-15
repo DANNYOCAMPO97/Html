@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Suma de números</title>
+  </head>
+  <body>
+    <h1>Suma de números</h1>
+    <p>El resultado de la suma es: <span id="resultado"></span></p>
+    <script>
+      function sumarNumeros(num1, num2) {
+        return num1 + num2;
+      }
+
+      let resultado = sumarNumeros(2, 3);
+      document.getElementById("resultado").textContent = resultado;
+    </script>
+  </body>
+</html>

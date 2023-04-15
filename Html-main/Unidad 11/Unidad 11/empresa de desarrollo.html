@@ -1,0 +1,27 @@
+ <html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> QA </title>
+</head>
+<body>
+<h3>
+	<p style="color: red;"> validar correo</p>
+	
+</h3>
+</body>
+<body>
+	<label for="email">Ingresa tu correo :</label>
+
+<input type="email" id="email"
+       pattern=".+@QA\.com" size="15" required>
+	   <input type="submit" id="btn" value="Continuar"
+ </body>
+	<script>
+	valor = document.getElementById("campo").value;
+if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(valor)) ) {
+  return false;
+}
+</script>
+</body>
+</html>
+
