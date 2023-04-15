@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+#parentElement {
+    list-style-type: none;
+    padding: 0;
+}
+
+#parentElement li {
+    margin-bottom: 5px;
+}
