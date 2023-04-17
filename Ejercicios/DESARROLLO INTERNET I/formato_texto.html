@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi sitio web</title>
+    <meta name="description" content="Bienvenido a mi sitio web">
+  </head>
+  <body>
+    <h1>Bienvenido a mi sitio web</h1>
+    <p>Este es un ejemplo de un sitio web básico.</p>
+  </body>
+</html>
+<div class="contenedor">
+  <h2>Productos</h2>
+  <ul>
+    <li><span class="negrita">Producto 1:</span> descripción del producto 1</li>
+    <li><span class="negrita">Producto 2:</span> descripción del producto 2</li>
+    <li><span class="negrita">Producto 3:</span> descripción del producto 3</li>
+  </ul>
+</div>
+<form>
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre"><br>
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email"><br>
+  <label for="edad">Edad:</label>
+  <input type="number" id="edad" name="edad"><br>
+  <label for="genero">Género:</label>
+  <select id="genero" name="genero">
+    <option value="m">Masculino</option>
+    <option value="f">Femenino</option>
+    <option value="o">Otro</option>
+  </select><br>
+  <input type="submit" value="Registrarse">
+</form>
+<script>
+  function mostrarMensaje() {
+    alert("Bienvenido a mi sitio web");
+  }
+  window.onload = mostrarMensaje;
+</script>
+<audio controls>
+  <source src="audio/mi-audio.mp3" type="audio/mpeg">
+  Tu navegador no soporta la etiqueta de audio.
+</audio>
